@@ -1,0 +1,51 @@
+PODS:
+  - DKNightVersion (2.4.3):
+    - DKNightVersion/Core (= 2.4.3)
+    - DKNightVersion/CoreAnimation (= 2.4.3)
+    - DKNightVersion/UIKit (= 2.4.3)
+  - DKNightVersion/Core (2.4.3):
+    - DKNightVersion/Core/DeallocBlockExecutor (= 2.4.3)
+    - DKNightVersion/Core/extobjc (= 2.4.3)
+  - DKNightVersion/Core/DeallocBlockExecutor (2.4.3)
+  - DKNightVersion/Core/extobjc (2.4.3)
+  - DKNightVersion/CoreAnimation (2.4.3):
+    - DKNightVersion/Core
+  - DKNightVersion/UIKit (2.4.3):
+    - DKNightVersion/Core
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - LBXScan (1.1.1):
+    - ZXingObjC (~> 3.0)
+  - Masonry (1.0.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - TZImagePickerController (1.8.0)
+  - WechatOpenSDK (1.7.7)
+  - ZXingObjC (3.1.0):
+    - ZXingObjC/All (= 3.1.0)
+  - ZXingObjC/All (3.1.0)
+
+DEPENDENCIES:
+  - DKNightVersion
+  - FMDB
+  - LBXScan (~> 1.1.1)
+  - Masonry
+  - SDWebImage (~> 3.8)
+  - TZImagePickerController
+  - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  LBXScan: dfb4d8ae8e4cff2aa0c9e1771e43954dce1469a9
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TZImagePickerController: 2a74f34f116e8229264e2afc122b0d8d4683c626
+  WechatOpenSDK: cbd332148eb792d444ed4eec94f421d98f2046ee
+  ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
+
+PODFILE CHECKSUM: 6a2d3abcea0b642c1f271ad1795658c66108a834
+
+COCOAPODS: 1.2.1

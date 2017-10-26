@@ -36,6 +36,7 @@
 		A4F3635F1FA192D800F5AA74 /* mymodel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F3635E1FA192D800F5AA74 /* mymodel.m */; };
 		A4F363631FA1966300F5AA74 /* myTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F363611FA1966300F5AA74 /* myTableViewCell.m */; };
 		A4F363641FA1966300F5AA74 /* myTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F363621FA1966300F5AA74 /* myTableViewCell.xib */; };
+		A4F363671FA1D93700F5AA74 /* JayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F363661FA1D93700F5AA74 /* JayMusicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,8 @@
 		A4F363601FA1966300F5AA74 /* myTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewCell.h; sourceTree = "<group>"; };
 		A4F363611FA1966300F5AA74 /* myTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewCell.m; sourceTree = "<group>"; };
 		A4F363621FA1966300F5AA74 /* myTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myTableViewCell.xib; sourceTree = "<group>"; };
+		A4F363651FA1D93700F5AA74 /* JayMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JayMusicViewController.h; sourceTree = "<group>"; };
+		A4F363661FA1D93700F5AA74 /* JayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JayMusicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				A4F3635E1FA192D800F5AA74 /* mymodel.m */,
 				A4F363601FA1966300F5AA74 /* myTableViewCell.h */,
 				A4F363611FA1966300F5AA74 /* myTableViewCell.m */,
+				A4F363651FA1D93700F5AA74 /* JayMusicViewController.h */,
+				A4F363661FA1D93700F5AA74 /* JayMusicViewController.m */,
 				A4E940CE1EB1DF1D00E6BA26 /* Main.storyboard */,
 				A4E940D11EB1DF1D00E6BA26 /* Assets.xcassets */,
 				A4E940D31EB1DF1D00E6BA26 /* LaunchScreen.storyboard */,
@@ -302,6 +307,7 @@
 				A4F3634C1FA18FF800F5AA74 /* AFNetworkReachabilityManager.m in Sources */,
 				A4F3633A1FA18F4C00F5AA74 /* NSString+MJExtension.m in Sources */,
 				A4F363331FA18F4C00F5AA74 /* MJProperty.m in Sources */,
+				A4F363671FA1D93700F5AA74 /* JayMusicViewController.m in Sources */,
 				A4F363501FA18FF800F5AA74 /* AFURLSessionManager.m in Sources */,
 				A4F3634F1FA18FF800F5AA74 /* AFURLResponseSerialization.m in Sources */,
 				A4F363631FA1966300F5AA74 /* myTableViewCell.m in Sources */,

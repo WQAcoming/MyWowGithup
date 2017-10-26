@@ -12,6 +12,7 @@
 #import "mymodel.h"
 #import "MJExtension.h"
 #import "myTableViewCell.h"
+#import "JayMusicViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSArray *myarry;
@@ -28,6 +29,23 @@
     [self requestwllan];
 }
 
+-(void)addUIbtn
+{
+    UIButton *btn = [[UIButton alloc] init];
+    btn.backgroundColor = [UIColor greenColor];
+    btn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 50 - 10, 20, 50, 50);
+    btn.layer.masksToBounds = YES;
+    btn.layer.cornerRadius = 25;
+    [btn addTarget:self action:@selector(pushmoda) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+-(void)pushmoda
+{
+    JayMusicViewController *jayVc = [[JayMusicViewController alloc] init];
+    [self presentViewController:jayVc animated:YES completion:nil];
+}
+
 //lazy tab
 -(UITableView *)tableview
 {
@@ -38,6 +56,7 @@
         tableview.delegate = self;
         tableview.dataSource = self;
         [self.view addSubview:tableview];
+        [self addUIbtn];
         _tableview = tableview;
         }
     return _tableview;

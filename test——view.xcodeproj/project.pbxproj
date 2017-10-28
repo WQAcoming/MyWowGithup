@@ -10,6 +10,8 @@
 		A4792D5A1FA2DDAE00B09B7E /* TowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4792D591FA2DDAE00B09B7E /* TowViewController.m */; };
 		A4792D5D1FA2E38C00B09B7E /* twomodel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4792D5C1FA2E38C00B09B7E /* twomodel.m */; };
 		A4792D601FA2E50000B09B7E /* twoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4792D5F1FA2E50000B09B7E /* twoTableViewCell.m */; };
+		A49577AF1FA40E9C00EEF16C /* threeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49577AE1FA40E9C00EEF16C /* threeViewController.m */; };
+		A49577B21FA4137400EEF16C /* threemodel.m in Sources */ = {isa = PBXBuildFile; fileRef = A49577B11FA4137400EEF16C /* threemodel.m */; };
 		A4E940C71EB1DF1D00E6BA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E940C61EB1DF1D00E6BA26 /* main.m */; };
 		A4E940CA1EB1DF1D00E6BA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E940C91EB1DF1D00E6BA26 /* AppDelegate.m */; };
 		A4E940CD1EB1DF1D00E6BA26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E940CC1EB1DF1D00E6BA26 /* ViewController.m */; };
@@ -50,6 +52,10 @@
 		A4792D5C1FA2E38C00B09B7E /* twomodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twomodel.m; sourceTree = "<group>"; };
 		A4792D5E1FA2E50000B09B7E /* twoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twoTableViewCell.h; sourceTree = "<group>"; };
 		A4792D5F1FA2E50000B09B7E /* twoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twoTableViewCell.m; sourceTree = "<group>"; };
+		A49577AD1FA40E9C00EEF16C /* threeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threeViewController.h; sourceTree = "<group>"; };
+		A49577AE1FA40E9C00EEF16C /* threeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = threeViewController.m; sourceTree = "<group>"; };
+		A49577B01FA4137400EEF16C /* threemodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threemodel.h; sourceTree = "<group>"; };
+		A49577B11FA4137400EEF16C /* threemodel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = threemodel.m; sourceTree = "<group>"; };
 		A4E940C21EB1DF1D00E6BA26 /* test——view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test——view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E940C61EB1DF1D00E6BA26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4E940C81EB1DF1D00E6BA26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +164,10 @@
 				A4792D5C1FA2E38C00B09B7E /* twomodel.m */,
 				A4792D5E1FA2E50000B09B7E /* twoTableViewCell.h */,
 				A4792D5F1FA2E50000B09B7E /* twoTableViewCell.m */,
+				A49577AD1FA40E9C00EEF16C /* threeViewController.h */,
+				A49577AE1FA40E9C00EEF16C /* threeViewController.m */,
+				A49577B01FA4137400EEF16C /* threemodel.h */,
+				A49577B11FA4137400EEF16C /* threemodel.m */,
 				A4E940CE1EB1DF1D00E6BA26 /* Main.storyboard */,
 				A4E940D11EB1DF1D00E6BA26 /* Assets.xcassets */,
 				A4E940D31EB1DF1D00E6BA26 /* LaunchScreen.storyboard */,
@@ -335,6 +345,7 @@
 				A4F363501FA18FF800F5AA74 /* AFURLSessionManager.m in Sources */,
 				A4F3634F1FA18FF800F5AA74 /* AFURLResponseSerialization.m in Sources */,
 				A4F363631FA1966300F5AA74 /* myTableViewCell.m in Sources */,
+				A49577B21FA4137400EEF16C /* threemodel.m in Sources */,
 				A4F363391FA18F4C00F5AA74 /* NSObject+MJProperty.m in Sources */,
 				A4E940CD1EB1DF1D00E6BA26 /* ViewController.m in Sources */,
 				A4F3634E1FA18FF800F5AA74 /* AFURLRequestSerialization.m in Sources */,
@@ -343,6 +354,7 @@
 				A4F3635B1FA1913700F5AA74 /* SVProgressHUD.m in Sources */,
 				A4E940CA1EB1DF1D00E6BA26 /* AppDelegate.m in Sources */,
 				A4F363321FA18F4C00F5AA74 /* MJFoundation.m in Sources */,
+				A49577AF1FA40E9C00EEF16C /* threeViewController.m in Sources */,
 				A4E940C71EB1DF1D00E6BA26 /* main.m in Sources */,
 				A4F3635C1FA1913700F5AA74 /* SVRadialGradientLayer.m in Sources */,
 			);

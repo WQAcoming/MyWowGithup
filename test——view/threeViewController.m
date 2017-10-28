@@ -1,84 +1,83 @@
 //
-//  TowViewController.m
+//  threeViewController.m
 //  test——view
 //
-//  Created by 吴侨安 on 2017/10/27.
+//  Created by 吴侨安 on 2017/10/28.
 //  Copyright © 2017年 吴侨安. All rights reserved.
 //
 
-#import "TowViewController.h"
-#import "AFNetworking.h"
-#import "SVProgressHUD.h"
-#import "twomodel.h"
-#import "MJExtension.h"
-#import "twoTableViewCell.h"
 #import "threeViewController.h"
+#import "SVProgressHUD.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "threemodel.h"
 
-static NSString * const ID = @"cell";
+static NSString *const ID = @"idcell";
 
-
-@interface TowViewController ()
-@property (nonatomic,strong) NSMutableArray *twoarry;
+@interface threeViewController ()
+@property (nonatomic,strong) NSMutableArray *threearry;
 @end
 
-@implementation TowViewController
+@implementation threeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
-    [self.tableView registerClass:[twoTableViewCell class] forCellReuseIdentifier:ID];
-    [self rightbtn];
     [SVProgressHUD showWithStatus:@"请稍等"];
-    [self requestwlan];
+    [self requestwllan];
+    
 }
 
--(void)rightbtn
-{
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"下一页" style:UIBarButtonItemStylePlain target:self action:@selector(rightbtnaction)];
-}
-
--(void)rightbtnaction
-{
-    threeViewController *three = [[threeViewController alloc] init];
-    three.title = @"系统自带的cell";
-    [self.navigationController  pushViewController:three animated:YES];
-}
-
--(void)requestwlan
+-(void)requestwllan
 {
     AFHTTPSessionManager *msg = [AFHTTPSessionManager manager];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"a"] = @"tag_recommend";
+    dict[@"action"] = @"sub";
+    dict[@"c"] = @"topic";
     
-    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    dic[@"a"] = @"tag_recommend";
-    dic[@"action"] = @"sub";
-    dic[@"c"] = @"topic";
-    
-    [msg POST:@"http://api.budejie.com/api/api_open.php" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [msg POST:@"http://api.budejie.com/api/api_open.php" parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [SVProgressHUD dismiss];
-        self.twoarry = [twomodel mj_objectArrayWithKeyValuesArray:responseObject];
+        self.threearry = [threemodel mj_objectArrayWithKeyValuesArray:responseObject];
         [self.tableView reloadData];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [SVProgressHUD dismiss];
-        
     }];
-    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.twoarry.count;
+    return self.threearry.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    twoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    twomodel *mode = self.twoarry[indexPath.row];
-    cell.model = mode;
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
+    //缓存中取
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
+    //创建
+    if (!cell)
+    {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
+    
+    threemodel *mode = self.threearry[indexPath.row];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:mode.image_list]];
+        UIImage *img = [UIImage imageWithData:data];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [cell.imageView setImage:img];
+        });
+    });
+    cell.textLabel.text = mode.theme_name;
+    cell.detailTextLabel.text = mode.sub_number;
     return cell;
 }
 
@@ -86,6 +85,7 @@ static NSString * const ID = @"cell";
 {
     return 80;
 }
+
 
 /*
 // Override to support conditional editing of the table view.

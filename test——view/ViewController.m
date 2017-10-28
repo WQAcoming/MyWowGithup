@@ -13,6 +13,7 @@
 #import "MJExtension.h"
 #import "myTableViewCell.h"
 #import "JayMusicViewController.h"
+#import "MyNavController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSArray *myarry;
@@ -43,7 +44,8 @@
 -(void)pushmoda
 {
     JayMusicViewController *jayVc = [[JayMusicViewController alloc] init];
-    [self presentViewController:jayVc animated:YES completion:nil];
+    MyNavController *mynav = [[MyNavController alloc] initWithRootViewController:jayVc];
+    [self presentViewController:mynav animated:YES completion:nil];
 }
 
 //lazy tab

@@ -7,6 +7,7 @@
 //
 
 #import "JayMusicViewController.h"
+#import "TowViewController.h"
 
 @interface JayMusicViewController ()
 {
@@ -28,6 +29,9 @@
     [self addUIToolbar];
     
     [self addleftbtn];
+    
+    [self addrightbtn];
+    
 }
 
 -(void)addUIToolbar
@@ -41,12 +45,12 @@
 
 -(void)addleftbtn
 {
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 20, 50, 50)];
-    btn.layer.masksToBounds = YES;
-    btn.layer.cornerRadius = 25;
-    btn.backgroundColor =[UIColor greenColor];
-    [btn addTarget:self action:@selector(leftbtnaction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"🔙" style:UIBarButtonItemStylePlain target:self action:@selector(leftbtnaction)];
+}
+
+-(void)addrightbtn
+{
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"🐓" style:UIBarButtonItemStylePlain target:self action:@selector(pushAction)];
 }
 
 -(void)leftbtnaction
@@ -54,18 +58,16 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(void)pushAction
+{
+    TowViewController *twovc = [[TowViewController alloc] init];
+    twovc.title = @"不带xib的tab";
+    [self.navigationController pushViewController:twovc animated:YES];
+}
+
 -(void)dealloc
 {
     NSLog(@"i,m died");
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

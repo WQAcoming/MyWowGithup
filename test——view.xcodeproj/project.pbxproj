@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4792D5A1FA2DDAE00B09B7E /* TowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4792D591FA2DDAE00B09B7E /* TowViewController.m */; };
+		A4792D5D1FA2E38C00B09B7E /* twomodel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4792D5C1FA2E38C00B09B7E /* twomodel.m */; };
+		A4792D601FA2E50000B09B7E /* twoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4792D5F1FA2E50000B09B7E /* twoTableViewCell.m */; };
 		A4E940C71EB1DF1D00E6BA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E940C61EB1DF1D00E6BA26 /* main.m */; };
 		A4E940CA1EB1DF1D00E6BA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E940C91EB1DF1D00E6BA26 /* AppDelegate.m */; };
 		A4E940CD1EB1DF1D00E6BA26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E940CC1EB1DF1D00E6BA26 /* ViewController.m */; };
@@ -37,9 +40,16 @@
 		A4F363631FA1966300F5AA74 /* myTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F363611FA1966300F5AA74 /* myTableViewCell.m */; };
 		A4F363641FA1966300F5AA74 /* myTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F363621FA1966300F5AA74 /* myTableViewCell.xib */; };
 		A4F363671FA1D93700F5AA74 /* JayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F363661FA1D93700F5AA74 /* JayMusicViewController.m */; };
+		A4F5933A1FA2C25900CF395F /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F593391FA2C25900CF395F /* MyNavController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4792D581FA2DDAE00B09B7E /* TowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowViewController.h; sourceTree = "<group>"; };
+		A4792D591FA2DDAE00B09B7E /* TowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TowViewController.m; sourceTree = "<group>"; };
+		A4792D5B1FA2E38C00B09B7E /* twomodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twomodel.h; sourceTree = "<group>"; };
+		A4792D5C1FA2E38C00B09B7E /* twomodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twomodel.m; sourceTree = "<group>"; };
+		A4792D5E1FA2E50000B09B7E /* twoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twoTableViewCell.h; sourceTree = "<group>"; };
+		A4792D5F1FA2E50000B09B7E /* twoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twoTableViewCell.m; sourceTree = "<group>"; };
 		A4E940C21EB1DF1D00E6BA26 /* test——view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test——view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E940C61EB1DF1D00E6BA26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4E940C81EB1DF1D00E6BA26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +108,8 @@
 		A4F363621FA1966300F5AA74 /* myTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myTableViewCell.xib; sourceTree = "<group>"; };
 		A4F363651FA1D93700F5AA74 /* JayMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JayMusicViewController.h; sourceTree = "<group>"; };
 		A4F363661FA1D93700F5AA74 /* JayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JayMusicViewController.m; sourceTree = "<group>"; };
+		A4F593381FA2C25900CF395F /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
+		A4F593391FA2C25900CF395F /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +152,20 @@
 				A4F363611FA1966300F5AA74 /* myTableViewCell.m */,
 				A4F363651FA1D93700F5AA74 /* JayMusicViewController.h */,
 				A4F363661FA1D93700F5AA74 /* JayMusicViewController.m */,
+				A4792D581FA2DDAE00B09B7E /* TowViewController.h */,
+				A4792D591FA2DDAE00B09B7E /* TowViewController.m */,
+				A4792D5B1FA2E38C00B09B7E /* twomodel.h */,
+				A4792D5C1FA2E38C00B09B7E /* twomodel.m */,
+				A4792D5E1FA2E50000B09B7E /* twoTableViewCell.h */,
+				A4792D5F1FA2E50000B09B7E /* twoTableViewCell.m */,
 				A4E940CE1EB1DF1D00E6BA26 /* Main.storyboard */,
 				A4E940D11EB1DF1D00E6BA26 /* Assets.xcassets */,
 				A4E940D31EB1DF1D00E6BA26 /* LaunchScreen.storyboard */,
 				A4E940D61EB1DF1D00E6BA26 /* Info.plist */,
 				A4E940C51EB1DF1D00E6BA26 /* Supporting Files */,
 				A4F363621FA1966300F5AA74 /* myTableViewCell.xib */,
+				A4F593381FA2C25900CF395F /* MyNavController.h */,
+				A4F593391FA2C25900CF395F /* MyNavController.m */,
 			);
 			path = "test——view";
 			sourceTree = "<group>";
@@ -299,9 +319,13 @@
 				A4F363361FA18F4C00F5AA74 /* NSObject+MJClass.m in Sources */,
 				A4F363311FA18F4C00F5AA74 /* MJExtensionConst.m in Sources */,
 				A4F363351FA18F4C00F5AA74 /* MJPropertyType.m in Sources */,
+				A4792D601FA2E50000B09B7E /* twoTableViewCell.m in Sources */,
+				A4F5933A1FA2C25900CF395F /* MyNavController.m in Sources */,
 				A4F363341FA18F4C00F5AA74 /* MJPropertyKey.m in Sources */,
+				A4792D5A1FA2DDAE00B09B7E /* TowViewController.m in Sources */,
 				A4F363381FA18F4C00F5AA74 /* NSObject+MJKeyValue.m in Sources */,
 				A4F3634B1FA18FF800F5AA74 /* AFHTTPSessionManager.m in Sources */,
+				A4792D5D1FA2E38C00B09B7E /* twomodel.m in Sources */,
 				A4F3635F1FA192D800F5AA74 /* mymodel.m in Sources */,
 				A4F363371FA18F4C00F5AA74 /* NSObject+MJCoding.m in Sources */,
 				A4F3634C1FA18FF800F5AA74 /* AFNetworkReachabilityManager.m in Sources */,
